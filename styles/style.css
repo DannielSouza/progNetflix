@@ -1,0 +1,591 @@
+/*  RESETS  */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    overflow-x: hidden;
+    background: #212121;
+}
+
+/*  HEADER  */
+
+.header{  
+    display: flex;
+    height: 12vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .7) , rgba(255, 255, 255, .0));
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    z-index: 100;
+    position: relative;
+    width: 100%;
+}
+
+.header > div{
+    align-items: center;
+}
+
+
+.logo img{
+    width: 13vw;
+    margin: 0 1vw;
+    padding-right: 3vw;
+}
+
+.header a{
+    font-size: 17px;
+}
+
+.menu{
+    display: flex;
+    color: white;
+    justify-content: center;
+    margin-right: 2vw;
+}
+
+.menu2{
+    display: none;
+}
+
+li{
+    padding: 10px;
+    margin-right: 5px;
+}
+
+li a{
+    color: white;
+}
+
+.lSide{
+    display: flex;
+}
+
+.rSide div{
+    padding: 4px;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.rSide{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.imgButtons{
+    height: 3.5vh;
+}
+
+.rSide a{
+    color: white;
+}
+
+.profile{
+    height: 6vh;
+    border-radius: 10px;
+    margin-right: 1vw;
+}
+
+#profilePicture{
+    width: 65%;
+}
+
+.header a{
+    transition: .3s;
+}
+
+.header a:hover{
+    color: lightgray;
+}
+
+/*  VIDEOPART  */
+
+.videoBackgroungContainer{
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    height: 107vh;
+    overflow: hidden;
+}
+
+.videoBackgroung video{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+
+/* .video{
+    position: relative;
+    height: 100vw;
+} */
+
+.fadeEffect{
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 110vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .0)
+    , rgba(33, 33, 33, .1)
+    , rgba(33, 33, 33, .2)
+    , rgba(33, 33, 33, .2)
+    , rgba(33, 33, 33, .3)
+    , rgba(33, 33, 33, .6)
+    , rgba(33, 33, 33, 1.0));
+    z-index: 30;
+}
+
+
+.titleContainer{
+    position: absolute;
+    top: 45%;
+    left: 3vw;
+    z-index: 100;
+    color: white;
+}
+
+.titleVideo{
+    margin-bottom: 3vw;
+    font-family: 'Macondo', cursive;
+    font-size: 5.5em;
+}
+
+.buttons{
+    align-items: center;
+    display: flex;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none; 
+    font-weight: bold;   
+    z-index: 99999;
+    cursor: pointer;
+}
+
+.buttons img{
+    height: 5vh;
+    margin: 5px;
+}
+
+.titleBtn{
+    display: flex;
+}
+
+.play{
+    transition: 0.5s; 
+}
+
+.play:hover{
+    background-color: darkgray;
+}
+
+.info{
+    background-color: rgba(65, 65, 65, .6);
+    color: white;
+    transition: 0.5s;
+}
+
+.info:hover{
+    background-color: rgba(40, 40, 40, .6);
+}
+
+/*  SCROLLBAR  */
+
+body::-webkit-scrollbar {
+    width: 9px;               
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #202022;       
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgray;    
+    border-radius: 20px;      
+    border: 3px solid 202022;  
+  }
+
+::-webkit-scrollbar-corner{
+      background-color: #202022;
+      border-radius: 50%;
+  }
+
+
+/*  CATALOGSECTION  */
+
+
+
+
+.maincatalogContainer{
+    margin-top: 36vw;
+    margin-left: 2.5vw;
+    margin-right: 3vw;
+    z-index: 9999;
+    
+}
+
+.titleOfCatalog{
+    z-index: 99999;
+    position: relative;
+}
+
+.maincatalogContainer h2{
+    color: white;
+    margin-bottom: 1vw;
+    z-index: 9999;
+}
+
+.itensContainer{
+    display: flex;
+    width: calc(100vw - 10vh);
+    z-index: 9999;
+    overflow: visible;
+}
+
+
+.itens img{
+    width: 18vw;
+}
+
+.itens{
+    transition: .2s;
+    cursor: pointer;
+}
+
+.itens:hover{
+    transform: scale(1.1);
+}
+
+.boxContainer{
+    display: flex;
+    align-items: center;
+}
+
+.catalogContainer{
+    color: white;
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 2.5vw;
+    margin-right: 3vw;
+}
+
+.catalogContainer h2{
+    color: white;
+    margin-bottom: 1vw;
+    z-index: 9999;
+}
+
+/*  FOOTER  */
+
+.footer{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background: linear-gradient(to top, rgba(0, 0, 0, .7) , rgba(255, 255, 255, .0)) ;
+ color: white;
+ padding-bottom: 10px;
+}
+
+.footer img{
+    width: 24px;
+}
+
+
+/*  QUERIES  */
+
+
+
+@media (max-width: 1150px){
+
+    .maincatalogContainer{
+        margin-top: 42vw;
+        margin-left: 2.5vw;
+        margin-right: 3vw;
+        z-index: 9999;
+        
+    }
+
+  
+
+
+}
+
+@media (max-width: 1100px){
+
+    .maincatalogContainer{
+        margin-top: 45vw;
+        margin-left: 2.5vw;
+        margin-right: 3vw;
+        z-index: 9999;
+        
+    }
+
+
+    
+
+}
+
+@media (max-width: 900px){
+
+    .maincatalogContainer{
+        margin-top: 48vw;
+        margin-left: 2.5vw;
+        margin-right: 3vw;
+        z-index: 9999;
+        
+    }
+
+    
+
+
+    .buttons{
+        z-index: 2000;
+        position: relative;  
+    }
+
+}
+
+@media (max-width: 850px){
+
+    .maincatalogContainer{
+        margin-top: 52vw;
+        margin-left: 2.5vw;
+        margin-right: 3vw;
+        z-index: 9999;
+        
+    }
+
+    .maincatalogContainer, .catalogContainer{
+        padding-left: 3vw;
+    }
+
+    .menu1{
+        display: none;
+    }
+
+    .menu2{
+        display: flex;
+    }
+
+    .menu2::after{
+        content: "";
+        width: 0; 
+        height: 0; 
+         border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-top: 8px solid white;
+        margin-top: 5px;
+        margin-left: 5px;
+        
+    }
+
+    
+
+    
+
+
+}
+
+@media (max-width: 830px){
+    .titleContainer{
+        position: absolute;
+        top: 25%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+    .titleVideo{
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 760px){
+    .titleContainer{
+        position: absolute;
+        top: 35%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+    .titleVideo{
+        font-size: 2.5em;
+    }
+
+
+}
+
+@media (max-width: 700px){
+    .titleContainer{
+        position: absolute;
+        top: 30%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+}
+
+@media (max-width: 620px){
+    .titleContainer{
+        position: absolute;
+        top: 25%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+}
+
+@media (max-width: 540px){
+    .titleContainer{
+        position: absolute;
+        top: 20%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+    .titleVideo{
+        width: 10vw;
+    }
+
+    .buttons{
+        width: 28vw;   
+    }
+
+    .titleBtn p{
+        font-size: 10px;
+    }
+    
+    .buttons img{
+        height: 3vh;
+        margin: 3px;
+    }
+
+
+
+    .logo img{
+        width: 5vh;
+        margin: 0 2vw;
+        padding-right: 3vw;
+    }
+
+
+
+}
+
+@media (max-width: 480px){
+    .titleContainer{
+        position: absolute;
+        top: 13%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+    .titleVideo{
+        font-size: 22px;
+    }
+
+    .logo img{
+        width: 20vw;
+        margin: 0 1vw;
+        padding-right: 3vw;
+    }
+
+    .buttons{
+        width: 25vw;   
+    }
+
+    .titleBtn p{
+        font-size: 8px;
+    }
+    
+    .buttons img{
+        height: 2vh;
+        margin: 2px;
+    }
+
+    .logo img{
+        width: 17vw;
+        margin: 0 1vw;
+        padding-right: 3vw;
+    }
+
+
+    .header{
+        height: 12vw;
+        align-items: center;
+    }
+
+    .header a{
+        font-size: 12px;
+    }
+
+    .rSide img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    .profile img{
+        width: 24px;
+    }
+
+    .maincatalogContainer, .catalogContainer{
+        padding-left: 3.5vw;
+    }
+
+
+}
+
+@media (max-width: 400px){
+    .titleContainer{
+        position: absolute;
+        top: 10%;
+        left: 3vw;
+        z-index: 100;
+        color: white;
+    }
+
+    .logo img{
+        width: 18vw;
+        margin: 0 1vw;
+        padding-right: 3vw;
+    }
+
+
+    .header{
+        height: 10vw;
+        align-items: center;
+    }
+
+    .header a{
+        font-size: 12px;
+    }
+
+    .rSide img{
+        width: 18px;
+        height: 18px;
+    }
+    
+    .profile img{
+        width: 24px;
+    }
+
+    .maincatalogContainer, .catalogContainer{
+        padding-left: 5vw;
+    }
+
+
+}
