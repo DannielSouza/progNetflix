@@ -13,7 +13,7 @@
 
 <h2>Informações</h2>
   
-<h3>Resumo:</h3> Nesse projeto resolvi fazer mais do quê os videos que eu achei no youtube sobre o mesmo assunto, como por exemplo usar um carrossel funcional(usando a biblioteca slick) e também fazendo o video de autoplay automatico igual existe no site original da Netflix o que deixa muito mais bonito. Pretendo evoluir esse projeto com o passar do tempo pra deixar cada vez mais igual com o site orignal.
+<h3>Resumo:</h3> Nesse projeto resolvi fazer mais do quê os videos que eu achei no youtube sobre o mesmo assunto, como por exemplo usar um carrossel funcional(usando a biblioteca slick) e também fazendo o video de autoplay automatico igual existe no site original da Netflix o que deixa muito mais bonito. Pretendo evoluir esse projeto com o passar do tempo pra deixar cada vez mais igual com o site orignal. Ainda não está 100% responsivo para telas menores como tablets e celulares.
   
  <br>
  
